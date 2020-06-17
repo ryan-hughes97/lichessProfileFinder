@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+/* p {
+  margin-bottom: 1rem;
+} */
+
+input {
+  padding: .3rem;
+  font-size: 1.2rem;
+  margin: 1rem .5rem;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button {
+  padding: .3rem;
+  font-size: 1.2rem;
+}
+
+i {
+  padding: .5rem;
+}
+
+.lichess-color {
+  color: #d59020
+}
+
+.small {
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.error-alert {
+  display: none;
+  border-radius: 5px;
+  background: pink;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: .3rem;
+}
+
+.stat-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: .5rem;
+  margin: auto;
+}
+
+.player-stats {
+  margin-bottom: 1rem;
+}
+
+.stat-item {
+  padding: .5rem;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  min-width: 100px;
+  margin: auto;
+}
+
+.title {
+  background: rgb(78, 145, 199);
+}
+
+.followers {
+  background: rgb(253, 167, 8);
+}
+
+.following {
+  background: rgb(247, 224, 16);
+}
+
+.wins {
+  background: rgb(9, 163, 9);
+}
+
+.draws {
+  background: rgb(187, 187, 187);
+}
+
+.losses {
+  background: rgb(202, 62, 62);
+}
+
+.bullet {
+  background: rgb(255, 192, 203);
+}
+
+.blitz {
+  background: rgb(196, 103, 196);
+}
+
+.rapid {
+  background: rgb(15, 192, 192);
+}
+
+@media(max-width: 500px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .stat-container {
+    grid-gap: 3px;
+  }
+}
