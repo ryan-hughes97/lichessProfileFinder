@@ -4,12 +4,11 @@ const searchBtn = document.getElementById('search-btn');
 const errorAlert = document.getElementById('error-alert')
 
 // Search Input Event Listener 
-// searchUser.addEventListener('keyup', getUser);
 searchBtn.addEventListener('click', getUser);
-
 
 async function getUser() {
   if(searchUser.value === '') {
+    // Error Alert message if no input
     errorAlert.style.display = 'block';
     errorAlert.innerHTML = 'Please enter a valid username';
 
@@ -42,8 +41,8 @@ async function getUser() {
       `;
       document.getElementById('profile').innerHTML = output;
     })
+    // Error Alert if username is not found
     .catch(error => {
-      console.error('There has been a problem with your fetch operation:', error);
       if(error) {
         errorAlert.style.display = 'block';
         errorAlert.innerHTML = 'Please enter a valid username';
